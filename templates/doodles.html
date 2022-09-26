@@ -6,20 +6,14 @@
         <h1 class="text-primary"><strong>Doodles</strong></h1>
         <p class="text-secondary">Don't really know what to put here. Have some doodles.</p>
     </div>
-{% endblock %}
-
-{% block body %}
-    <img src="Fox.png" alt="Fox doodle 1">
-
-    <img src="fox2.png" alt="Fox doodle 2">
-
-    <img src="penguin.png" alt="Penguin doodle">
-
-    <img src="hedgehog.png" alt="Hedgehog doodle">
-
-    <img src="hedgehog.png" alt="Hedgehog doodle">
-
-    <img src="snail.png" alt="Snail doodle">
+    <div>
+        <img src="{{ url_for('static', filename='assets/Fox.png') }}" alt="Fox doodle 1">
+        <img src="{{ url_for('static', filename='assets/fox2.png') }}" alt="Fox doodle 2">
+        <img src="{{ url_for('static', filename='assets/penguin.png') }}" alt="Penguin doodle">
+        <img src="{{ url_for('static', filename='assets/hedgehog.png') }}" alt="Hedgehog doodle">
+        <img src="{{ url_for('static', filename='assets/hedgehog.png') }}" alt="Hedgehog doodle">
+        <img src="{{ url_for('static', filename='assets/snail.png') }}" alt="Snail doodle">
+    </div>
 {% endblock %}
 
 {% block background %}
