@@ -20,6 +20,10 @@ def index():
 @app.route('/stub/')  # connects /stub/ URL to stub() function
 def stub():
     return render_template("stub.html")
+    
+@app.route('/doodles/')  # connects /doodles/ URL to doodles() function
+def doodles():
+    return render_template("doodles.html")
 
 # this runs the application on the development server
 if __name__ == "__main__":
